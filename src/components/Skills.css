@@ -1,0 +1,88 @@
+.skills-section {
+  background: var(--dark2);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 32px;
+  border: 1px solid rgba(0,255,135,0.1);
+  background: linear-gradient(135deg, rgba(0,255,135,0.03), transparent);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: default;
+}
+
+.skill-card--cyan {
+  border-color: rgba(0,229,255,0.1);
+  background: linear-gradient(135deg, rgba(0,229,255,0.03), transparent);
+}
+.skill-card--pink {
+  border-color: rgba(255,0,110,0.1);
+  background: linear-gradient(135deg, rgba(255,0,110,0.03), transparent);
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.5);
+}
+.skill-card--neon:hover  { border-color: rgba(0,255,135,0.4);  box-shadow: 0 16px 50px rgba(0,0,0,0.5), 0 0 20px rgba(0,255,135,0.08); }
+.skill-card--cyan:hover  { border-color: rgba(0,229,255,0.4);  box-shadow: 0 16px 50px rgba(0,0,0,0.5), 0 0 20px rgba(0,229,255,0.08); }
+.skill-card--pink:hover  { border-color: rgba(255,0,110,0.4);  box-shadow: 0 16px 50px rgba(0,0,0,0.5), 0 0 20px rgba(255,0,110,0.08); }
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.skill-icon { font-size: 1.3rem; }
+.skill-cat-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.skill-card--neon .skill-cat-title { color: var(--neon); }
+.skill-card--cyan .skill-cat-title { color: var(--cyan); }
+.skill-card--pink .skill-cat-title { color: var(--pink); }
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-tag {
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(200,214,232,0.1);
+  color: rgba(200,214,232,0.7);
+  background: rgba(255,255,255,0.02);
+  transition: all 0.25s;
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+}
+.skill-card--neon  .skill-tag:hover { border-color: var(--neon);  color: var(--neon);  background: rgba(0,255,135,0.06);  box-shadow: 0 0 10px rgba(0,255,135,0.15); }
+.skill-card--cyan  .skill-tag:hover { border-color: var(--cyan);  color: var(--cyan);  background: rgba(0,229,255,0.06);  box-shadow: 0 0 10px rgba(0,229,255,0.15); }
+.skill-card--pink  .skill-tag:hover { border-color: var(--pink);  color: var(--pink);  background: rgba(255,0,110,0.06);  box-shadow: 0 0 10px rgba(255,0,110,0.15); }
+
+/* Corner decoration */
+.skill-card-corner {
+  position: absolute;
+  top: 0; right: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0 30px 30px 0;
+  border-color: transparent;
+  transition: border-color 0.3s;
+}
+.skill-card--neon:hover .skill-card-corner { border-color: transparent var(--neon) transparent transparent; }
+.skill-card--cyan:hover .skill-card-corner { border-color: transparent var(--cyan) transparent transparent; }
+.skill-card--pink:hover .skill-card-corner { border-color: transparent var(--pink) transparent transparent; }
