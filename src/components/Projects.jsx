@@ -14,10 +14,10 @@ const projects = [
   },
   {
     num: '02',
-    title: 'Loan Predicot App',
+    title: 'Credit Check App',
     desc: 'Real-time analytics dashboard featuring live WebSocket charts, heatmaps, and intelligent data visualization. Dark-mode first with fully responsive layout.',
     techs: ['React', 'Typescript', 'python', 'fastapi', 'openAi'],
-    emoji: '📊',
+    emoji: '💰',
     gradient: 'linear-gradient(135deg, #020409 0%, #041a1a 100%)',
     accent: '#00e5ff',
     github: 'https://github.com/AhmedLaghari27/Loan-Predictor.git',
