@@ -5,6 +5,7 @@ import Hero     from './components/Hero';
 import About    from './components/About';
 import Skills   from './components/Skills';
 import Projects from './components/Projects';
+import WordpressShowcase from './components/Wordpressshowcase';
 import Contact  from './components/Contact';
 import Footer   from './components/Footer';
 import { useReveal } from './hooks/useReveal';
@@ -38,6 +39,9 @@ export default function App() {
 
         <div className="neon-divider" />
         <Projects />
+
+        <WordpressShowcase />
+
 
         <div className="neon-divider" />
         <Contact />
