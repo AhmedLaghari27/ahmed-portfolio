@@ -5,7 +5,7 @@ import Hero     from './components/Hero';
 import About    from './components/About';
 import Skills   from './components/Skills';
 import Projects from './components/Projects';
-import WordpressShowcase from './components/Wordpressshowcase';
+import WordpressShowcase from './components/WordpressShowcase';
 import Contact  from './components/Contact';
 import Footer   from './components/Footer';
 import { useReveal } from './hooks/useReveal';
