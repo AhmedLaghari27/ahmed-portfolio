@@ -3,60 +3,53 @@ import { useState } from 'react';
 const wpSites = [
   {
     num: '01',
-    title: 'Business Pro',
-    desc: 'A modern corporate website built on WordPress with custom theme development, SEO optimization, and dynamic content management.',
-    img: '/src/assets/screenshots/1.jpg',
+    title: 'Cybersecurity Website',
+    desc: 'Developed a modern cybersecurity website focused on security awareness and digital protection services. The project highlights clean UI design, responsive development, and structured presentation of cybersecurity solutions.',
+    img: '/src/assets/p1.png',
     tags: ['WordPress', 'Custom Theme', 'SEO'],
     accent: '#00ff87',
   },
   {
     num: '02',
-    title: 'E-Commerce Store',
-    desc: 'Full-featured WooCommerce store with custom product pages, payment gateway integration, and mobile-first responsive design.',
-    img: '/src/assets/screenshots/2.jpg',
+    title: 'Web Design Agency Website',
+    desc: 'Designed and developed a modern website for a web design agency to showcase its services, portfolio, and client solutions. The website features a clean layout, responsive design, and a professional user experience. Built to highlight creative design and strong web development skills. 🌐💻',
+    img: '/src/assets/p2.png',
     tags: ['WordPress', 'WooCommerce', 'Elementor'],
     accent: '#00e5ff',
   },
   {
     num: '03',
-    title: 'Portfolio Agency',
-    desc: 'Creative agency portfolio with animated sections, custom post types, and a fully tailored visual identity built in WordPress.',
-    img: '/src/assets/screenshots/3.jpg',
+    title: 'Plesk Hosting Platform Website',
+    desc: 'Developed a website inspired by Plesk to present web hosting management features and server control solutions. The project focuses on a clean interface, responsive layout, and clear presentation of hosting tools. Built to demonstrate my ability to design modern, professional tech-focused websites.',
+    img: '/src/assets/p3.png',
     tags: ['WordPress', 'ACF', 'GSAP'],
     accent: '#00ff87',
   },
   {
     num: '04',
-    title: 'Real Estate Platform',
-    desc: 'Property listing website with advanced search filters, map integration, and a clean dashboard for property management.',
-    img: '/src/assets/screenshots/4.jpg',
+    title: 'Automobile Services West Boca',
+    desc: 'Designed and developed a professional website for an automobile services business in West Boca. The website highlights car repair services, maintenance solutions, and customer-friendly booking information with a clean and responsive design. Built to provide a smooth user experience and showcase automotive service offerings online. 🚗💻',
+    img: '/src/assets/p4.png',
     tags: ['WordPress', 'Custom Plugin', 'Google Maps'],
     accent: '#00e5ff',
   },
   {
     num: '05',
-    title: 'Blog & Magazine',
-    desc: 'Content-heavy magazine-style blog with category management, newsletter integration, and blazing-fast performance optimization.',
-    img: '/src/assets/screenshots/5.jpg',
-    tags: ['WordPress', 'Gutenberg', 'Mailchimp'],
+    title: 'Pivot Solution Website',
+    desc: 'Developed a professional website for Pivot Solutions to present its business services and digital solutions. The website features a clean, modern layout with responsive design and clear service sections. Built to ensure a smooth user experience while highlighting the company’s expertise and offerings. 🌐💼',
+    img: '/src/assets/p5.jpeg',
+    tags: ['WordPress', 'Elementor', 'Mailchimp'],
     accent: '#00ff87',
   },
   {
     num: '06',
-    title: 'Restaurant Website',
-    desc: 'Elegant restaurant site featuring online menu, reservation system, gallery, and social media integration with a dark luxury theme.',
-    img: '/src/assets/screenshots/6.jpg',
-    tags: ['WordPress', 'Elementor', 'OpenTable'],
+    title: 'SimpleCyber',
+    desc: 'Developed a cybersecurity services website that showcases a range of digital security solutions including threat protection, security assessments, and consulting services. The website features a clean, modern design with a focus on clarity and user experience. Built to effectively present cybersecurity services and build trust with potential clients. 🔐💻',
+    img: '/src/assets/p6.jpeg',
+    tags: ['WordPress', 'Gutenberg', 'OpenTable'],
     accent: '#00e5ff',
   },
-  {
-    num: '07',
-    title: 'Health & Wellness',
-    desc: 'Wellness clinic website with appointment booking, service pages, testimonials section, and HIPAA-friendly contact forms.',
-    img: '/src/assets/screenshots/7.jpg',
-    tags: ['WordPress', 'Booking Plugin', 'WPForms'],
-    accent: '#00ff87',
-  },
+  
 ];
 
 const styles = `
@@ -375,7 +368,7 @@ export default function WordpressShowcase() {
               {/* Info */}
               <div className="wp-info">
                 <div className="wp-num" style={{ color: site.accent }}>
-                  {site.num} / 07
+                  {site.num} / 06
                 </div>
                 <h3 className="wp-title">{site.title}</h3>
                 <p className="wp-desc">{site.desc}</p>
