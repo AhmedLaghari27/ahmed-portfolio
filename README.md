@@ -87,8 +87,8 @@ npm run build
 
 This portfolio can be deployed in one click on:
 
-- **[Vercel](https://vercel.com)** ← 
-- **[Netlify](https://netlify.com)**
+
+- **[Netlify](https://ahmedlaghari.netlify.app/)**
 - **[GitHub Pages](https://pages.github.com)**
 
 
